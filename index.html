@@ -3,9 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Sim City Bomb Squad</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <script src="bomb.js"></script>
+
+
   </head>
   <body class="unexploded">
+    <div id='bomb'>
+      <div id='timer'></div>
+      <div id='uncut-1' class='wire'></div>
+      <div id='uncut-2' class='wire'></div>
+      <div id='uncut-3' class='wire'></div>
+      <div id='uncut-4' class='wire'></div>
+      <div id='uncut-5' class='wire'></div>
+      <div id='reset-console'><button id='reset'>reset</button></div>
+    </div>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="bomb.js"></script>
+  <audio id='siren' src='sounds/Siren.wav' autoplay='Y' loop='loop'> </audio>
   </body>
 </html>
